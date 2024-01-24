@@ -20,7 +20,6 @@ html{
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-image: url(images/mainbgsda.png); /* TODO */
     background-size: cover;
     background-position: center;
 }
