@@ -1,3 +1,4 @@
+/* Set up for the entire base page */
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +11,12 @@ body{
     color: #fff;
 }
 
+/* makes the navigation bar run smoothly */
 html{
     scroll-behavior: smooth;
 }
 
+/* main start page */
 #home{
     display: flex;
     justify-content: center;
@@ -57,6 +60,7 @@ nav ul li a{
     position: relative;
 }
 
+/* adds a special underline to navigation */
 nav ul li a::after{
     content: '';
     width: 0;
@@ -72,6 +76,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+/* set up for the about section */
 #about{
     min-height: 80vh;
     margin-bottom: 30px;
@@ -84,6 +89,7 @@ nav ul li a:hover::after{
     font-size: 50px;
 }
 
+/* sets up grid for formatting the information and image */
 .about-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -102,6 +108,7 @@ nav ul li a:hover::after{
     margin-right: 15px;
 }
 
+/* creating layout for each section of about */
 .skills{
     text-align: center;
     padding: 15px;
@@ -160,6 +167,7 @@ nav ul li a:hover::after{
     border-color: #0f52a9;
 }
 
+/* page setup for experience section */
 #experience{
     min-height: 100vh;
 }
@@ -205,6 +213,7 @@ nav ul li a:hover::after{
     margin-right: -250px;
 }
 
+/* sets up grid layout for text and images in left row of experience section */
 .experience-row-1, .experience-row-3{
     display: grid;
     justify-content: center;
@@ -212,6 +221,7 @@ nav ul li a:hover::after{
     align-content: center;
 }
 
+/* sets up grid layout for text and images in right row of experience section */
 .experience-row-2, .experience-row-4{
     display: grid;
     justify-content: center;
@@ -234,6 +244,7 @@ nav ul li a:hover::after{
     margin: 50px 50px 50px 50px;
 }
 
+/* creates a better paragraph spacing */
 .experience-row-1 .experience-col-2 p, .experience-row-2 .experience-col-1 p, .experience-row-3 .experience-col-2 p, .experience-row-4 .experience-col-1 p{
     line-height: 2;
 }
@@ -247,6 +258,7 @@ nav ul li a:hover::after{
     color: #7a7b7b;
 }
 
+/* set up fontawesome icons */
 .fa-solid.fa-code, .fa-solid.fa-database, .fa-solid.fa-user-group{
     font-size: 20px;
     margin: 10px 10px;
@@ -254,6 +266,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
+/* page setup for projects section */
 #projects{
     margin-top: 100px;
     min-height: 100vh;
@@ -266,6 +279,7 @@ nav ul li a:hover::after{
     font-size: 50px;
 }
 
+/* set up grid layout for showing the 3 projects */
 .projects-container{
     width: 100%;
     background-color: #000000;
@@ -289,6 +303,7 @@ nav ul li a:hover::after{
     margin: 0 auto; 
 }
 
+/* adds adaptive change when hovering over images */
 .projects-col-1 img:hover, .projects-col-2 img:hover, .projects-col-3 img:hover{
     transform: scale(1.05);
 }
@@ -325,6 +340,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
+/* page set up for contact section */
 #contact{
     min-height: 80vh;
 }
@@ -346,6 +362,7 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
+/* styling for fontawesome icons */
 .socials a{
     font-size: 35px;
     margin: 10px 10px;
@@ -402,6 +419,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
+/* adds adaptive change to button when hovering */
 .contact-button:hover{
     transform: translateY(-5px);
     background: #0f52a9;
